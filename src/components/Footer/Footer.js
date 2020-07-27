@@ -6,7 +6,10 @@ const Footer = () => {
       <footer>
           <div className="footer-container">
               <p>
-                    copyright &copy;  {new Date().getFullYear()}. Lawson teyi. All right reserved
+                    copyright &copy;  {new Date().getFullYear()}. Lawson teyi. All right reserved 
+              </p>
+              <p>
+                    Images provided by marvel.com
               </p>
           </div>
       </footer>

@@ -1,7 +1,7 @@
 import React , {useEffect , useState , useContext} from 'react'
 import { fireBaseContext } from './../Firebase';
 import Loader from '../Loader/Loader';
-
+import ReactTooltip from 'react-tooltip';
 
 const Logout = () => {
 
@@ -47,8 +47,9 @@ const Logout = () => {
             {showLoading()}
             <label  className="switch">
                 <input type="checkbox" checked= {checked} onChange= {handleChange} />
-                <span className="slider round"></span>
+                <span className="slider round" data-tip="Déconnexion"></span>
             </label>
+            <ReactTooltip place="left" effect="solid"/>
         </div>
     )
 }

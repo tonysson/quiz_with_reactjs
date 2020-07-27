@@ -39,7 +39,7 @@ class Quiz extends React.Component {
 
         //state
         this.state = initialState
-        
+
         //permet de stocker tout le tableau des questions et des reponses pour pouvoir comparer la reponse du user a la reponse stockée 
         this.storeDataRef = React.createRef()
     }
@@ -194,8 +194,6 @@ class Quiz extends React.Component {
         return (ourScore / maxQuest) * 100
     }
 
-    
-
     //game over
     gameOver = percent => {
 
@@ -210,12 +208,13 @@ class Quiz extends React.Component {
         }
     }
 
+   
 
     //load another level questions
     loadLevelQuestion = param => {
         //on copie ts nos state sauf quizLevel 
         this.setState({
-            ...this.initialState,
+            ...initialState,
             quizLevel:param
         })
         //on va charger les questions

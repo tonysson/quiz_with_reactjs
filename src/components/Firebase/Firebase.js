@@ -4,13 +4,13 @@ import 'firebase/firestore'
 
 
 const config = {
-    apiKey: "AIzaSyAQfroDFhH0HcfCQAh33cHh6bA2ADXMRsE",
-    authDomain: "app-react-quiz.firebaseapp.com",
-    databaseURL: "https://app-react-quiz.firebaseio.com",
-    projectId: "app-react-quiz",
-    storageBucket: "app-react-quiz.appspot.com",
-    messagingSenderId: "551902356240",
-    appId: "1:551902356240:web:9e8ed2759b0bf07fbefb95"
+    apiKey: process.env.REACT_APP_FIREBASE_API_key,
+    authDomain: process.env.REACT_APP_FIREBASE_API_AUTHDOMAIN,
+    databaseURL: process.env.REACT_APP_FIREBASE_API_DATABASEURL,
+    projectId: process.env.REACT_APP_FIREBASE_API_PROJECTID,
+    storageBucket: process.env.REACT_APP_FIREBASE_API_STORAGEBUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_API_MESSENGINGSENDERID,
+    appId: process.env.REACT_APP_FIREBASE_API_APPID
 };
 
 class Firebase {
